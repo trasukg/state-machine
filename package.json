@@ -1,0 +1,28 @@
+{
+  "name": "@trasukg/state-machine",
+  "version": "1.0.0",
+  "description": "A fairly simple JavaScript finite state machine utility.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trasukg/state-machine.git"
+  },
+  "keywords": [
+    "javascript",
+    "finite",
+    "state",
+    "machine"
+  ],
+  "author": "Greg Trasuk",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/trasukg/state-machine/issues"
+  },
+  "homepage": "https://github.com/trasukg/state-machine#readme",
+  "devDependencies": {
+    "jasmine": "^2.7.0"
+  }
+}
