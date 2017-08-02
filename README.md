@@ -12,12 +12,7 @@ functions.
 Usage
 -----
 
-- First, import the state machine class:  
-      var StateMachine=require('..');  
-- Then, create a descriptor for the states.  This is a JavaScript object that
-contains a key/value pair for each state.  The key is the name of the state,
-and the value an object that defines the events the state responds to. 
-
+    var StateMachine=require('@trasukg/state-machine');  
     var states={
       A: {
         go: 'B',
@@ -41,11 +36,18 @@ and the value an object that defines the events the state responds to.
       }  
     };
 
+    var machine=new StateMachine(states,'A');  
+    machine.go();
+    var c=machine.value();
+    machine.takeArgs(12);
+
+- First, import the state machine class: 
+- Then, create a descriptor for the states.  This is a JavaScript object that
+contains a key/value pair for each state.  The key is the name of the state,
+and the value an object that defines the events the state responds to.
 - Instantiate a state machine, by calling the StateMachine constructor, with
 the state descriptor, and the name of the initial state of the machine:    
-    var machine=new StateMachine(states,'A');  
 - Now, you can call events on the state machine.  
-    machine.go();  
 
 What happens when you call the event depends on the state definitions.  To see
 the possibilities, lets' take a look at the definition for State 'A' above:
