@@ -1,6 +1,6 @@
 {
   "name": "@trasukg/state-machine",
-  "version": "1.0.1-beta",
+  "version": "1.0.2-beta",
   "description": "A fairly simple JavaScript finite state machine utility.",
   "main": "src/index.js",
   "scripts": {
